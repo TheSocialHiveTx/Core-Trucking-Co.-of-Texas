@@ -1,0 +1,55 @@
+
+:root {
+    --core-blue: #003366;
+    --core-orange: #f37021;
+}
+
+body { font-family: 'Inter', sans-serif; }
+
+.btn-primary {
+    background-color: var(--core-orange);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 700;
+    transition: all 0.2s;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #e2621a;
+    transform: translateY(-1px);
+}
+
+.nav-link {
+    color: #475569;
+    font-weight: 500;
+    transition: color 0.2s;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--core-blue);
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--core-blue);
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--core-blue);
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus { top: 0; }
