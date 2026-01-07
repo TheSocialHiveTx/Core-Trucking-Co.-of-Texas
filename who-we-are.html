@@ -9,15 +9,42 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="bg-white text-slate-900">
-    <header class="bg-white shadow h-20 flex items-center px-4 max-w-7xl mx-auto justify-between">
-        <a href="index.html" class="font-black text-2xl text-[#003366]">CORE</a>
-        <nav class="hidden lg:flex space-x-6 items-center">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="who-we-are.html" class="nav-link active">Who We Are</a>
-            <a href="trucking-services.html" class="nav-link">Services</a>
-            <a href="contact.html" class="nav-link">Contact</a>
-            <a href="request-a-quote.html" class="btn-primary">Request a Quote</a>
-        </nav>
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center">
+                    <div class="flex flex-col">
+                        <span class="text-2xl font-black text-[#003366] leading-none uppercase tracking-tighter">CORE</span>
+                        <span class="text-xs font-bold text-slate-500 tracking-widest uppercase">Trucking Co. of Texas</span>
+                    </div>
+                </a>
+                <nav class="hidden lg:flex items-center space-x-6">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="who-we-are.html" class="nav-link">Who We Are</a>
+                    <a href="trucking-services.html" class="nav-link">Trucking Services</a>
+                    <a href="transfer.html" class="nav-link">Transfer</a>
+                    <a href="https://coreadvantagellc.com" target="_blank" class="nav-link">Logistics <i class="fa-solid fa-external-link text-[10px] ml-1"></i></a>
+                    <a href="careers.html" class="nav-link">Careers</a>
+                    <a href="news.html" class="nav-link">News</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="request-a-quote.html" class="btn-primary">Request a Quote</a>
+                </nav>
+                <button id="menu-toggle" class="lg:hidden p-2 text-slate-600 focus:outline-none" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t p-4 space-y-2">
+            <a href="index.html" class="block py-2 text-slate-600 font-medium">Home</a>
+            <a href="who-we-are.html" class="block py-2 text-slate-600 font-medium">Who We Are</a>
+            <a href="trucking-services.html" class="block py-2 text-slate-600 font-medium">Trucking Services</a>
+            <a href="transfer.html" class="block py-2 text-slate-600 font-medium">Transfer</a>
+            <a href="https://coreadvantagellc.com" target="_blank" class="block py-2 text-slate-600 font-medium">Logistics</a>
+            <a href="careers.html" class="block py-2 text-slate-600 font-medium">Careers</a>
+            <a href="news.html" class="block py-2 text-slate-600 font-medium">News</a>
+            <a href="contact.html" class="block py-2 text-slate-600 font-medium">Contact</a>
+            <a href="request-a-quote.html" class="block bg-[#f37021] text-white text-center py-3 rounded font-bold mt-4">Request a Quote</a>
+        </div>
     </header>
 
     <main id="main-content">
@@ -36,8 +63,8 @@
                         <p class="text-slate-600 italic">"To provide reliable, safe, and efficient port trucking services to the Houston area, ensuring that our customers' cargo is moved with precision and care every single time."</p>
                     </div>
                 </div>
-                <div class="bg-slate-100 h-96 rounded-2xl flex items-center justify-center text-slate-400">
-                    <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover rounded-2xl" alt="Company Image">
+                <div class="bg-slate-100 h-96 rounded-2xl flex items-center justify-center text-slate-400 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover" alt="Company Image">
                 </div>
             </div>
         </section>
@@ -51,23 +78,40 @@
                 </div>
             </div>
         </section>
-
-        <section class="py-20 max-w-7xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-black text-[#003366] mb-12">Headquarters</h2>
-            <div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 max-w-lg mx-auto">
-                <p class="text-xl font-bold mb-2">1200 McCabe Rd</p>
-                <p class="text-slate-600 mb-6">La Porte, Texas 77571</p>
-                <div class="space-y-2">
-                    <p class="text-[#003366] font-bold">1-281-470-7575</p>
-                    <p class="text-[#f37021] font-bold">rates@coreoftx.com</p>
-                </div>
-            </div>
-        </section>
     </main>
 
-    <footer class="bg-slate-900 text-slate-400 py-10 text-center text-xs">
-        &copy; 2024 Core Trucking Co. of Texas, LLC.
+    <footer class="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <span class="text-2xl font-black text-white tracking-tighter uppercase">CORE</span>
+                <p class="text-xs font-bold text-slate-500 uppercase mt-1">Trucking Co. of Texas</p>
+                <p class="text-sm mt-4">Houston Port Specialists serving the Gulf Coast since 1999.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase text-sm">Links</h4>
+                <ul class="text-sm space-y-2">
+                    <li><a href="who-we-are.html" class="hover:text-[#f37021]">Who We Are</a></li>
+                    <li><a href="trucking-services.html" class="hover:text-[#f37021]">Services</a></li>
+                    <li><a href="transfer.html" class="hover:text-[#f37021]">Transfer</a></li>
+                    <li><a href="contact.html" class="hover:text-[#f37021]">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase text-sm">Contact</h4>
+                <p class="text-sm">1200 McCabe Rd, La Porte, TX 77571</p>
+                <p class="text-sm">1-281-470-7575</p>
+                <p class="text-sm">rates@coreoftx.com</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase text-sm">Request a Quote</h4>
+                <a href="request-a-quote.html" class="btn-primary w-full text-center">Get Rates</a>
+            </div>
+        </div>
+        <div class="text-center text-xs text-slate-500 mt-12 pt-8 border-t border-slate-800">
+            &copy; 2024 Core Trucking Co. of Texas, LLC. All Rights Reserved.
+        </div>
     </footer>
+
     <script src="assets/js/main.js"></script>
 </body>
 </html>
