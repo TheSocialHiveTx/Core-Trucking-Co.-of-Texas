@@ -9,6 +9,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Active Navigation Highlighting logic
+    const path = window.location.pathname;
+    const page = path.split("/").pop() || "index.html";
+
+    const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        // Check if current page matches href exactly, or if it's the home page root
+        if (href === page || (page === "" && href === "index.html")) {
+            link.classList.add('active');
+            if (link.classList.contains('mobile-nav-link')) {
+                link.classList.add('text-[#003366]', 'font-bold');
+            }
+        }
+    });
+
     // Form Success Detection via Query Parameter
     const params = new URLSearchParams(window.location.search);
     if (params.get('submitted') === 'true') {
@@ -20,12 +36,4 @@ document.addEventListener('DOMContentLoaded', () => {
             successEl.scrollIntoView({ behavior: 'smooth' });
         }
     }
-
-    // Active Navigation Highlighting
-    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-    document.querySelectorAll('.nav-link').forEach(link => {
-        if (link.getAttribute('href') === currentPath) {
-            link.classList.add('active');
-        }
-    });
 });

@@ -46,20 +46,21 @@
                 </button>
             </div>
         </div>
-        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t p-4 space-y-2">
-            <a href="index.html" class="block py-2 text-slate-600 font-medium">Home</a>
-            <a href="who-we-are.html" class="block py-2 text-slate-600 font-medium">Who We Are</a>
-            <a href="trucking-services.html" class="block py-2 text-slate-600 font-medium">Trucking Services</a>
-            <a href="transfer.html" class="block py-2 text-slate-600 font-medium">Transfer</a>
-            <a href="https://coreadvantagellc.com" target="_blank" class="block py-2 text-slate-600 font-medium">Logistics</a>
-            <a href="careers.html" class="block py-2 text-slate-600 font-medium">Careers</a>
-            <a href="news.html" class="block py-2 text-slate-600 font-medium">News</a>
-            <a href="contact.html" class="block py-2 text-slate-600 font-medium">Contact</a>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t p-4 space-y-2 shadow-lg">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="who-we-are.html" class="mobile-nav-link">Who We Are</a>
+            <a href="trucking-services.html" class="mobile-nav-link">Trucking Services</a>
+            <a href="transfer.html" class="mobile-nav-link">Transfer</a>
+            <a href="https://coreadvantagellc.com" target="_blank" class="mobile-nav-link">Logistics</a>
+            <a href="careers.html" class="mobile-nav-link">Careers</a>
+            <a href="news.html" class="mobile-nav-link">News</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
             <a href="request-a-quote.html" class="block bg-[#f37021] text-white text-center py-3 rounded font-bold mt-4">Request a Quote</a>
         </div>
     </header>
 
     <main id="main-content">
+        <!-- Hero -->
         <section class="relative h-[600px] flex items-center bg-slate-900 text-white overflow-hidden">
             <div class="absolute inset-0 z-0">
                 <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&q=80&w=1600" class="w-full h-full object-cover opacity-30" alt="Core Trucking Fleet">
@@ -76,20 +77,28 @@
             </div>
         </section>
 
+        <!-- Port Highlight -->
         <section class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-4">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <h2 class="text-3xl font-black text-[#003366] mb-6 uppercase tracking-tight">Houston Port Specialists</h2>
-                        <p class="text-slate-600 text-lg leading-relaxed mb-6">Serving <strong>Barbours Cut</strong> and <strong>Bayport</strong> terminals with unmatched reliability.</p>
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="flex items-center text-[#003366] font-bold text-sm"><i class="fa-solid fa-shield-check text-[#f37021] mr-2"></i> Bonded Carrier</div>
-                            <div class="flex items-center text-[#003366] font-bold text-sm"><i class="fa-solid fa-biohazard text-[#f37021] mr-2"></i> Hazmat Certified</div>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&q=80&w=800" class="rounded-2xl shadow-xl" alt="Terminals">
-                    </div>
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <h2 class="text-3xl font-black text-[#003366] mb-6 uppercase tracking-tight">Houston Port Specialists</h2>
+                <p class="text-slate-600 text-lg leading-relaxed max-w-3xl mx-auto">Serving Barbours Cut and Bayport with industry-leading efficiency and safety standards.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                     <div class="p-6 bg-slate-50 rounded-xl">
+                        <i class="fa-solid fa-truck-moving text-4xl text-[#f37021] mb-4"></i>
+                        <h3 class="font-bold text-[#003366] mb-2 uppercase">Drayage</h3>
+                        <p class="text-sm text-slate-600">Local and regional port-to-door solutions.</p>
+                     </div>
+                     <div class="p-6 bg-slate-50 rounded-xl">
+                        <i class="fa-solid fa-warehouse text-4xl text-[#f37021] mb-4"></i>
+                        <h3 class="font-bold text-[#003366] mb-2 uppercase">Transfer</h3>
+                        <h3 class="font-bold text-[#003366] mb-2 uppercase">Transfer</h3>
+                        <p class="text-sm text-slate-600">Dock facility for palletizing and transloading.</p>
+                     </div>
+                     <div class="p-6 bg-slate-50 rounded-xl">
+                        <i class="fa-solid fa-route text-4xl text-[#f37021] mb-4"></i>
+                        <h3 class="font-bold text-[#003366] mb-2 uppercase">Logistics</h3>
+                        <p class="text-sm text-slate-600">Final mile coverage across 48 states.</p>
+                     </div>
                 </div>
             </div>
         </section>
