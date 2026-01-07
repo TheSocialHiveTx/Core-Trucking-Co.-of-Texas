@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     // Mobile Menu Toggle
     const menuBtn = document.getElementById('menu-toggle');
@@ -10,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Form Success Detection
+    // Form Success Detection via Query Parameter
     const params = new URLSearchParams(window.location.search);
     if (params.get('submitted') === 'true') {
         const successEl = document.getElementById('success-message');
@@ -18,10 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (successEl && formEl) {
             successEl.classList.remove('hidden');
             formEl.classList.add('hidden');
+            successEl.scrollIntoView({ behavior: 'smooth' });
         }
     }
 
-    // Auto-active nav links
+    // Active Navigation Highlighting
     const currentPath = window.location.pathname.split('/').pop() || 'index.html';
     document.querySelectorAll('.nav-link').forEach(link => {
         if (link.getAttribute('href') === currentPath) {

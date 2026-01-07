@@ -1,3 +1,1 @@
-
-// Pure static HTML mode enabled.
-console.log('Core Trucking Site Loaded.');
+// Deprecated in favor of static HTML/JS
